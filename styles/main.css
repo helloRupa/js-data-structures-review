@@ -1,0 +1,103 @@
+body {
+  font-family: Dosis, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #1e1f20;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  padding: 15px 15px 5px 15px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.logo, h1 {
+  display: inline-block;
+}
+
+h1 {
+  font-family: 'IM Fell French Canon SC', serif;
+  font-weight: normal;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #dda2ac;
+}
+
+.logo {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.logo img {
+  width: 80%;
+  padding: 12px 9px;
+}
+
+header h1 {
+  vertical-align: top;
+  margin: 25px 0 0 10px;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #787878;
+  display: inline-block;
+  margin-left: -265px;
+  margin-top: 75px;
+  vertical-align: top;
+}
+
+main {
+  margin: 36px auto;
+  width: 90%;
+  max-width: 1000px;
+  min-height: calc(100vh - 242px);
+}
+
+main p {
+  margin-bottom: 24px;
+}
+
+ul {
+  margin-bottom: 32px;
+}
+
+li {
+  display: inline-block;
+  margin-right: 64px;
+}
+
+a {
+  color: #9d9d9d;
+}
+
+footer {
+  width: 100%;
+  background-color: pink;
+  padding: 12px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media all and (max-width: 510px) {
+  .tagline {
+    display: none;
+  }
+}
+
+@media all and (max-width: 550px) {
+  li {
+    margin: 0 34px 24px 0;
+  }
+}
