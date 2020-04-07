@@ -119,6 +119,22 @@ td:nth-of-type(2) {
   padding: 5px 0;
 }
 
+.letter li {
+  display: block;
+  font-weight: 600;
+  margin-left: 1em;
+}
+
+.letter li:before {
+  content: '-';
+  margin-right: 10px;
+}
+
+em {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
 @media all and (max-width: 510px) {
   .tagline {
     display: none;
