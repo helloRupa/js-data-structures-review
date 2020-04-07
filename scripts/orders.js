@@ -3,7 +3,10 @@
 // Hint: You may need JSON.stringify(object)
 
 function convertOrders() {
+  const orders = document.querySelectorAll('.orders ul');
+  const ordersArray = Array.from(orders);
 
+  return ordersArray;
 }
 
 function displayDataStructure(data) {
@@ -13,4 +16,4 @@ function displayDataStructure(data) {
 }
 
 // Uncomment the line below when you're ready to test your code
-// displayDataStructure(convertOrders());
+displayDataStructure(convertOrders());
