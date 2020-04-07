@@ -3,9 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HI2M: Hammy's Past Orders</title>
+  <title>HI2M: Jammy's Orders</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,600|IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+  <link href="styles/reset.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <script src="scripts/orders.js" defer></script>
 </head>
 <body>
-  
+  <header>
+    <div class="logo">
+      <img src="https://image.flaticon.com/icons/png/512/84/84407.png">
+    </div>
+    <h1>Ham It 2 Me</h1>
+    <p class="tagline">
+      Groceries straight to your door...plus a free slice of ham
+    </p>
+  </header>
+
+  <main>
+    <section class="user-specific">
+      <h2>Jammy's Order History</h2>
+
+      <div class="orders">
+        <ul>
+          <li>
+            Order Number: <span>000-000-001</span>
+          </li>
+          <li>
+            Total: <span>126.24</span>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Cost</th>
+              </tr>
+              <tr>
+                <td>Kinder Bueno</td>
+                <td>35</td>
+                <td>100.56</td>
+              </tr>
+              <tr>
+                <td>Falafel Mix</td>
+                <td>2</td>
+                <td>10.00</td>
+              </tr>
+              <tr>
+                <td>Tofurkey Meow Meow</td>
+                <td>1</td>
+                <td>15.68</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Order Number: <span>000-000-002</span>
+          </li>
+          <li>
+            Total: <span>109.00</span>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Cost</th>
+              </tr>
+              <tr>
+                <td>Edible Soap</td>
+                <td>2</td>
+                <td>10.00</td>
+              </tr>
+              <tr>
+                <td>99 Flake</td>
+                <td>1</td>
+                <td>99.00</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+
+      <div class="result">
+        Order History data structure in here
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ham It 2 Me is so far from real that it's entirely not real</p>
+  </footer>
 </body>
 </html>

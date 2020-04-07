@@ -90,6 +90,35 @@ footer {
   letter-spacing: 3px;
 }
 
+.orders ul {
+  background-color: #edf8ff;
+  padding: 15px;
+}
+
+.orders li {
+  display: block;
+  padding: 5px 0;
+}
+
+td, th {
+  padding: 0 24px 6px 0;
+}
+
+td:nth-of-type(2) {
+  text-align: center;
+}
+
+.result {
+  background-color: pink;
+  min-height: 100px;
+  text-align: center;
+}
+
+.profile li {
+  display: block;
+  padding: 5px 0;
+}
+
 @media all and (max-width: 510px) {
   .tagline {
     display: none;
