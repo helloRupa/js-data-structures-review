@@ -20,7 +20,8 @@ const userData = {
 };
 
 function sanitize(data) {
-
+  // Clean up the data in here and then return it
+  // Feel free to break out your code into helper functions
 }
 
 function showUserData(data) {
@@ -42,5 +43,5 @@ function showUserData(data) {
     }
   }
 }
-
+// Update the line below to use the sanitized output
 showUserData(userData);
