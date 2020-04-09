@@ -2,7 +2,7 @@
 // Don't forget to display the result in the result div
 // Hint: You may need JSON.stringify(object)
 
-function convertOrders() {
+const convertOrders = function() {
   const orders = document.querySelectorAll('.orders ul');
   const ordersArray = Array.from(orders);
   const ordersDataStructure = [];
@@ -21,7 +21,7 @@ function convertOrders() {
   return ordersDataStructure;
 }
 
-function convertTableToArray(ul) {
+const convertTableToArray = function(ul) {
   const table = ul.querySelector('.items table');
   const headings = table.querySelectorAll('th');
   const rows = table.querySelectorAll('tr:not(:first-child)');
@@ -43,7 +43,7 @@ function convertTableToArray(ul) {
     return itemsArray;
 }
 
-function displayDataStructure(data) {
+const displayDataStructure = data => {
   const resultDiv = document.querySelector('.result');
 
   resultDiv.textContent = JSON.stringify(data);
@@ -51,3 +51,9 @@ function displayDataStructure(data) {
 
 // Uncomment the line below when you're ready to test your code
 displayDataStructure(convertOrders());
+
+
+
+const sayWow = (saying, number) => `${saying} wow ${number} times`;
+
+console.log(sayWow('such', 5));

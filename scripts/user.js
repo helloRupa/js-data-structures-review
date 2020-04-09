@@ -20,8 +20,22 @@ const userData = {
 };
 
 function sanitize(data) {
-  // Clean up the data in here and then return it
-  // Feel free to break out your code into helper functions
+  const userCopy = {...data};
+
+  userCopy.orders = [...data.orders];
+  delete userCopy.rep;
+
+  const filteredOrders = [];
+
+  for (const order of userCopy.orders) {
+    if (order) {
+      filteredOrders.push(order);
+    }
+  }
+
+  userCopy.orders = filteredOrders;
+
+  return userCopy;
 }
 
 function showUserData(data) {
@@ -44,4 +58,4 @@ function showUserData(data) {
   }
 }
 // Update the line below to use the sanitized output
-showUserData(userData);
+showUserData(sanitize(userData));
